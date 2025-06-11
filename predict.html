@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% block title %}Prediction Results - Heart Disease Predictor{% endblock %}
+
+{% block content %}
+<div class="diagnosis-container">
+    <div class="diagnosis-header">
+        <h2>Cardiac Assessment Report</h2>
+        <div class="diagnosis-status {% if prediction == 1 %}status-high-risk{% else %}status-low-risk{% endif %}">
+            {% if prediction == 1 %}
+            High Risk of Heart Disease
+            {% else %}
+            Low Risk of Heart Disease
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="diagnosis-details">
+        <div class="diagnosis-metric">
+            <div class="metric-title">Risk Probability</div>
+            <div class="metric-value">{{ "%.1f"|format(probability * 100) }}%</div>
+        </div>
+        <div class="diagnosis-metric">
+            <div class="metric-title">Confidence Level</div>
+            <div class="metric-value">{{ "%.1f"|format(confidence * 100) }}%</div>
+        </div>
+    </div>
+
+    <div class="clinical-assessment">
+        <h3>Clinical Assessment</h3>
+        <div class="assessment-content">
+            <p><strong>Primary Diagnosis:</strong> {{ disease_type }}</p>
+            <p><strong>Clinical Description:</strong> {{ disease_description }}</p>
+            <p><strong>Severity Score:</strong> {{ severity }}/100</p>
+        </div>
+    </div>
+
+    <div class="risk-factors">
+        <h3>Identified Risk Factors</h3>
+        <div class="risk-factors-list">
+            {% for factor in risk_factors %}
+            <div class="risk-factor-item">
+                <i class="fas fa-exclamation-circle"></i>
+                <div class="risk-factor-content">
+                    <h4>{{ factor.factor }}</h4>
+                    <p class="significance {{ factor.significance|lower }}">{{ factor.significance }} Risk</p>
+                    <p class="details">{{ factor.details }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="recommendations-section">
+        <h3><i class="fas fa-clipboard-list"></i> Clinical Recommendations</h3>
+        <div class="recommendations-list">
+            {% if prediction == 1 %}
+            <div class="recommendation-item">
+                <i class="fas fa-heartbeat"></i>
+                <div class="recommendation-content">
+                    <h4>Immediate Actions</h4>
+                    <p>Schedule an appointment with a cardiologist for comprehensive evaluation. Consider stress testing and coronary angiography.</p>
+                </div>
+            </div>
+            <div class="recommendation-item">
+                <i class="fas fa-pills"></i>
+                <div class="recommendation-content">
+                    <h4>Medication Management</h4>
+                    <p>Consider antiplatelet therapy, beta-blockers, and statins as appropriate. Regular monitoring of blood pressure and cholesterol levels required.</p>
+                </div>
+            </div>
+            <div class="recommendation-item">
+                <i class="fas fa-heart"></i>
+                <div class="recommendation-content">
+                    <h4>Lifestyle Modifications</h4>
+                    <p>Implement strict dietary changes, regular exercise program, and smoking cessation if applicable. Monitor for any new or worsening symptoms.</p>
+                </div>
+            </div>
+            {% else %}
+            <div class="recommendation-item">
+                <i class="fas fa-heart"></i>
+                <div class="recommendation-content">
+                    <h4>Preventive Care</h4>
+                    <p>Continue regular cardiovascular health monitoring. Maintain healthy lifestyle habits and annual check-ups.</p>
+                </div>
+            </div>
+            <div class="recommendation-item">
+                <i class="fas fa-running"></i>
+                <div class="recommendation-content">
+                    <h4>Exercise Recommendations</h4>
+                    <p>Engage in regular moderate-intensity exercise for at least 150 minutes per week. Include both aerobic and strength training activities.</p>
+                </div>
+            </div>
+            <div class="recommendation-item">
+                <i class="fas fa-apple-alt"></i>
+                <div class="recommendation-content">
+                    <h4>Dietary Guidelines</h4>
+                    <p>Follow a heart-healthy diet rich in fruits, vegetables, whole grains, and lean proteins. Limit saturated fats and sodium intake.</p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="next-steps">
+        <h3><i class="fas fa-arrow-right"></i> Next Steps</h3>
+        <div class="next-steps-list">
+            {% if prediction == 1 %}
+            <div class="next-step-item">
+                <i class="fas fa-calendar-check"></i>
+                <div class="next-step-content">
+                    <h4>Schedule Follow-up</h4>
+                    <p>Book an appointment with your primary care physician within the next 7 days for further evaluation.</p>
+                </div>
+            </div>
+            <div class="next-step-item">
+                <i class="fas fa-file-medical"></i>
+                <div class="next-step-content">
+                    <h4>Documentation</h4>
+                    <p>Keep a detailed log of any symptoms, including their frequency, duration, and triggers.</p>
+                </div>
+            </div>
+            <div class="next-step-item">
+                <i class="fas fa-phone"></i>
+                <div class="next-step-content">
+                    <h4>Emergency Contact</h4>
+                    <p>Save emergency contact numbers and be aware of the nearest cardiac care facility.</p>
+                </div>
+            </div>
+            {% else %}
+            <div class="next-step-item">
+                <i class="fas fa-calendar"></i>
+                <div class="next-step-content">
+                    <h4>Regular Monitoring</h4>
+                    <p>Schedule annual cardiovascular health check-ups and maintain regular exercise routine.</p>
+                </div>
+            </div>
+            <div class="next-step-item">
+                <i class="fas fa-chart-line"></i>
+                <div class="next-step-content">
+                    <h4>Health Tracking</h4>
+                    <p>Monitor blood pressure, cholesterol, and other cardiovascular risk factors regularly.</p>
+                </div>
+            </div>
+            <div class="next-step-item">
+                <i class="fas fa-book-medical"></i>
+                <div class="next-step-content">
+                    <h4>Education</h4>
+                    <p>Stay informed about heart health and preventive measures through reliable medical resources.</p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="data-privacy">
+        <i class="fas fa-shield-alt"></i>
+        <p>This assessment is based on the provided medical data and should be reviewed by a qualified healthcare professional. All information is kept confidential and secure.</p>
+    </div>
+
+    <div class="result-actions">
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">
+            <i class="fas fa-home"></i> Return Home
+        </a>
+        <a href="{{ url_for('patient_info') }}" class="btn btn-primary">
+            <i class="fas fa-user-plus"></i> New Assessment
+        </a>
+    </div>
+</div>
+{% endblock %} 

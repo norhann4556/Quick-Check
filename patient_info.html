@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Patient Information - Heart Disease Predictor{% endblock %}
+
+{% block content %}
+<div class="patient-form-container">
+    <div class="form-header">
+        <h1><i class="fas fa-user-circle"></i> Patient Information</h1>
+        <p class="form-description">Please provide your basic information to begin the heart disease risk assessment.</p>
+    </div>
+
+    <form action="/patient-info" method="post" class="patient-form">
+        <div class="form-sections">
+            <div class="form-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-user"></i> Personal Details</h2>
+                    <p class="section-description">Basic information required for the assessment</p>
+                </div>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" id="name" name="name" required 
+                               placeholder="Enter your full name" class="form-control"
+                               value="{{ saved_data.name if saved_data else '' }}">
+                        <small class="form-hint">Your complete name as it appears on official documents</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age"><i class="fas fa-birthday-cake"></i> Age</label>
+                        <input type="number" id="age" name="age" required 
+                               min="1" max="120" placeholder="Enter your age" class="form-control"
+                               value="{{ saved_data.age if saved_data else '' }}">
+                        <small class="form-hint">Age in years (1-120)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender"><i class="fas fa-venus-mars"></i> Gender</label>
+                        <select id="gender" name="gender" required class="form-control">
+                            <option value="">Select your gender</option>
+                            <option value="male" {% if saved_data and saved_data.gender == 'male' %}selected{% endif %}>Male</option>
+                            <option value="female" {% if saved_data and saved_data.gender == 'female' %}selected{% endif %}>Female</option>
+                            <option value="other" {% if saved_data and saved_data.gender == 'other' %}selected{% endif %}>Other</option>
+                        </select>
+                        <small class="form-hint">Your gender identity</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" required 
+                               placeholder="Enter your email" class="form-control"
+                               value="{{ saved_data.email if saved_data else '' }}">
+                        <small class="form-hint">Your email address for receiving results</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <a href="/" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+            <button type="submit" class="btn btn-primary">
+                Continue to Assessment
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %} 

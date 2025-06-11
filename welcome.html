@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">Heart Disease Predictor</a>
+            <div class="nav-links">
+                <a href="/" class="nav-link active">Home</a>
+                <a href="/patient-info" class="nav-link">Start Assessment</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="welcome-content">
+            <h1>Welcome to Heart Disease Predictor</h1>
+            <p class="welcome-text">A powerful tool that uses machine learning to assess your heart disease risk based on medical parameters.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Advanced Analysis</h3>
+                    <p>Utilizes machine learning algorithms trained on extensive medical data</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Quick Results</h3>
+                    <p>Get instant risk assessment and personalized recommendations</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Private</h3>
+                    <p>Your data is handled with utmost confidentiality</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="/patient-info" class="cta-button">Start Your Assessment</a>
+                <p class="cta-subtext">Takes only 5 minutes to complete</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> 

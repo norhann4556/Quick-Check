@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Heart Disease Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-brand">Heart Disease Predictor</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <h2>Error</h2>
+            <div class="error-message">
+                <p>{{ error }}</p>
+            </div>
+            <div class="action-buttons">
+                <a href="/index" class="btn btn-primary">Try Again</a>
+                <a href="/" class="btn">Return Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
