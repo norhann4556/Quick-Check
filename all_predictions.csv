@@ -1,0 +1,40 @@
+Timestamp,Patient Name,Email,Age,Sex,Chest Pain Type,Resting BP,Cholesterol,Blood Sugar,ECG Results,Max Heart Rate,Exercise Angina,ST Depression,ST Slope,Major Vessels,Thalassemia,Risk Level,Probability
+2025-04-23_13-33-37,roaa,r.abdelrahman4640@su.edu.eg,22.0,Female,1.0,180.0,55.0,Yes,0.0,18.0,Yes,10.0,1.0,2.0,1.0,High Risk,61.00%
+2025-04-23_14-07-23,roaa,r.abdelrahman4640@su.edu.eg,22.0,Female,0.0,22.0,30.0,Yes,0.0,20.0,Yes,10.0,1.0,2.0,0.0,High Risk,64.00%
+2025-04-23_14-13-21,roaa,r.abdelrahman4640@su.edu.eg,30.0,Female,2.0,33.0,22.0,No,0.0,20.0,Yes,10.0,1.0,1.0,0.0,High Risk,54.00%
+2025-04-23_14-45-27,roaa,r.abdelrahman4640@su.edu.eg,22.0,Female,1.0,180.0,3.0,Yes,0.0,90.0,Yes,10.0,1.0,1.0,0.0,High Risk,66.00%
+2025-04-23_14-47-33,Patient,,22.0,Female,1.0,180.0,3.0,Yes,0.0,90.0,Yes,10.0,1.0,1.0,0.0,High Risk,66.00%
+2025-04-23_14-52-25,roaa,r.abdelrahman4640@su.edu.eg,52.0,Female,1.0,180.0,20.0,No,0.0,72.0,Yes,1.0,1.0,2.0,1.0,Low Risk,47.00%
+2025-04-23_15-00-50,roaa,r.abdelrahman4640@su.edu.eg,22.0,Female,2.0,55.0,4.0,No,0.0,10.0,No,1.0,1.0,0.0,0.0,High Risk,54.00%
+2025-04-23_19-10-10,roaa,r.abdelrahman4640@su.edu.eg,66.0,Female,1.0,52.0,55.0,Yes,0.0,12.0,Yes,4.0,1.0,2.0,1.0,High Risk,61.00%
+2025-04-23_19-15-59,roaa,r.abdelrahman4640@su.edu.eg,22.0,Female,0.0,180.0,150.0,Yes,0.0,72.0,Yes,10.0,1.0,2.0,1.0,High Risk,60.00%
+2025-04-24_02-04-15,roaa,r.abdelrahman4640@su.edu.eg,52.0,Male,3.0,120.0,180.0,No,0.0,172.0,No,0.0,0.0,0.0,0.0,Low Risk,50.00%
+2025-04-24_02-11-27,roaa,r.abdelrahman4640@su.edu.eg,63.0,Female,0.0,145.0,233.0,Yes,2.0,150.0,Yes,2.3,1.0,0.0,1.0,High Risk,65.00%
+2025-04-24_02-22-31,roaa,r.abdelrahman4640@su.edu.eg,15.0,Female,2.0,120.0,180.0,No,0.0,172.0,No,0.0,0.0,0.0,0.0,Low Risk,48.00%
+2025-04-24_02-23-43,roaa,r.abdelrahman4640@su.edu.eg,5.0,Female,2.0,120.0,180.0,No,0.0,172.0,No,0.0,0.0,0.0,0.0,Low Risk,48.00%
+2025-04-24_02-24-00,roaa,r.abdelrahman4640@su.edu.eg,90.0,Female,2.0,120.0,180.0,No,0.0,172.0,No,0.0,0.0,0.0,0.0,Low Risk,48.00%
+2025-04-24_02-24-24,roaa,r.abdelrahman4640@su.edu.eg,120.0,Female,2.0,120.0,180.0,No,0.0,172.0,No,0.0,0.0,0.0,0.0,Low Risk,48.00%
+2025-04-24_02-25-07,roaa,r.abdelrahman4640@su.edu.eg,120.0,Female,2.0,300.0,500.0,No,0.0,172.0,No,0.0,0.0,0.0,0.0,Low Risk,48.00%
+2025-04-24_17-29-35,roaa,r.abdelrahman4640@su.edu.eg,55.0,Female,1.0,180.0,180.0,No,1.0,70.0,Yes,2.0,2.0,3.0,2.0,Low Risk,50.00%
+2025-04-24_17-34-46,roaa,r.abdelrahman4640@su.edu.eg,67.0,Female,0.0,140.0,240.0,Yes,2.0,160.0,Yes,2.3,0.0,0.0,1.0,High Risk,66.00%
+2025-04-27_22-56-01,roaa,r.abdelrahman4640@su.edu.eg,90.0,Female,1.0,300.0,200.0,No,1.0,183.0,No,0.0,1.0,0.0,1.0,Low Risk,50.00%
+2025-04-27_22-57-35,roaa,r.abdelrahman4640@su.edu.eg,60.0,Female,0.0,145.0,180.0,Yes,1.0,15.0,Yes,0.0,1.0,0.0,1.0,High Risk,61.00%
+2025-04-28_00-49-03,roaa,r.abdelrahman4640@su.edu.eg,60.0,Female,0.0,145.0,180.0,Yes,1.0,170.0,Yes,0.0,1.0,0.0,1.0,High Risk,61.00%
+2025-04-28_00-49-47,roaa,r.abdelrahman4640@su.edu.eg,90.0,Female,1.0,300.0,200.0,No,1.0,183.0,No,0.0,1.0,0.0,1.0,Low Risk,50.00%
+2025-04-28_16-28-31,roaa,r.abdelrahman4640@su.edu.eg,60.0,Female,0.0,145.0,233.0,Yes,2.0,150.0,Yes,2.3,1.0,0.0,1.0,High Risk,65.00%
+2025-04-29_16-56-40,roaa,r.abdelrahman4640@su.edu.eg,60.0,Female,0.0,145.0,233.0,Yes,2.0,150.0,Yes,2.3,1.0,0.0,1.0,High Risk,65.00%
+2025-04-29_16-56-44,roaa,r.abdelrahman4640@su.edu.eg,60.0,Female,0.0,145.0,233.0,Yes,2.0,150.0,Yes,2.3,1.0,0.0,1.0,High Risk,65.00%
+2025-04-29_17-06-08,roaa,r.abdelrahman4640@su.edu.eg,90.0,Female,1.0,300.0,200.0,No,1.0,183.0,No,0.0,1.0,0.0,1.0,Low Risk,50.00%
+2025-04-29_17-06-24,roaa,r.abdelrahman4640@su.edu.eg,90.0,Female,1.0,300.0,200.0,No,1.0,183.0,No,0.0,1.0,0.0,1.0,Low Risk,50.00%
+2025-04-29_17-06-30,roaa,r.abdelrahman4640@su.edu.eg,90.0,Female,1.0,300.0,200.0,No,1.0,183.0,No,0.0,1.0,0.0,1.0,Low Risk,50.00%
+2025-05-02_13-58-19,nour,nourhanadelll789@gmail.com,55.0,Female,0.0,54.0,40.0,Yes,0.0,120.0,No,10.0,0.0,2.0,0.0,High Risk,63.00%
+2025-05-13_00-34-45,frgrg,n.mohamed3634@su.edu.eg,22.0,Female,1.0,180.0,100.0,Yes,1.0,78.0,Yes,3.0,0.0,1.0,1.0,Low Risk,49.00%
+2025-05-13_00-40-12,frgrg,n.mohamed3634@su.edu.eg,22.0,Female,1.0,160.0,160.0,Yes,1.0,150.0,Yes,2.0,1.0,1.0,1.0,Variant Angina,53.00%
+2025-05-13_00-57-14,frgrg,n.mohamed3634@su.edu.eg,22.0,Female,1.0,120.0,120.0,Yes,1.0,70.0,Yes,1.0,0.0,2.0,2.0,No Significant Heart Disease,49.00%
+2025-05-13_13-09-10,frgrg,nourhanadelll789@gmail.com,22.0,Female,1.0,120.0,120.0,No,0.0,70.0,Yes,2.0,0.0,0.0,1.0,Variant Angina,56.00%
+2025-06-06_21-34-12,frgrg,nourhanadelll789@gmail.com,45.0,Female,2.0,180.0,150.0,No,1.0,200.0,Yes,6.0,1.0,1.0,2.0,No Significant Heart Disease,50.00%
+2025-06-06_21-39-13,frgrg,nourhanadelll789@gmail.com,85.0,0.0,1.0,155.0,150.0,1.0,1.0,150.0,1.0,6.0,1.0,2.0,2.0,Unstable Angina,0.53
+2025-06-06_21-43-37,frgrg,n.mohamed3634@su.edu.eg,56.0,0.0,1.0,160.0,120.0,1.0,1.0,120.0,0.0,5.0,2.0,2.0,2.0,Unstable Angina with Hypertension,0.52
+2025-06-06_21-44-21,frgrg,n.mohamed3634@su.edu.eg,80.0,0.0,2.0,120.0,120.0,0.0,1.0,200.0,1.0,2.0,2.0,2.0,1.0,Non-Cardiac Chest Pain,0.5
+2025-06-06_21-59-11,Nourhan Adel,nourhanadelll789@gmail.com,45,0,1,150,120,1,1,120,1,2.0,1,2,0,High Risk,0.58,Variant Angina,25
+2025-06-08_17-30-35,frgrg,nourhanadelll789@gmail.com,45,0,2,150,150,1,1,160,0,5.0,2,1,1,High Risk,0.52,Non-Cardiac Chest Pain,15
